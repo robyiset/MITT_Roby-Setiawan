@@ -34,9 +34,9 @@ namespace MITT_API.Controllers
             return Ok(skill);
         }
 
-        [Route("api/GetSkills")]
+        [Route("api/GetSkillsid")]
         [HttpGet]
-        public ActionResult GetSkills(int id)
+        public ActionResult GetSkillsid(int id)
         {
             Skills skill = new Skills();
             MySqlCommand comm = db.comm("SELECT * FROM skill where skill_id = " + id);
@@ -75,7 +75,7 @@ namespace MITT_API.Controllers
             return Ok();
         }
 
-        [Route("api/Delete")]
+        [Route("api//Delete")]
         [HttpDelete]
         public ActionResult Delete(int id)
         {

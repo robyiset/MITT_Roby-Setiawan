@@ -1,4 +1,10 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\MITT",
+    "\\MITT\\MITT_Front",
+    "\\MITT\\MITT_Front\\Controllers"
+  ],
+  "SelectedNode": "\\MITT\\MITT_Front\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

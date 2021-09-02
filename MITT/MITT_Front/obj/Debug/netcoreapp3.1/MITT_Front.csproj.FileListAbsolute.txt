@@ -395,3 +395,4 @@ C:\Users\robys\Source\Repos\robyiset\MITT_Roby-Setiawan\MITT\MITT_Front\bin\Debu
 C:\Users\robys\Source\Repos\robyiset\MITT_Roby-Setiawan\MITT\MITT_Front\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\robys\Source\Repos\robyiset\MITT_Roby-Setiawan\MITT\MITT_Front\obj\Debug\netcoreapp3.1\MITT_Front.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\robys\Source\Repos\robyiset\MITT_Roby-Setiawan\MITT\MITT_Front\obj\Debug\netcoreapp3.1\Razor\Views\user\Login.cshtml.g.cs
+C:\Users\robys\Source\Repos\robyiset\MITT_Roby-Setiawan\MITT\MITT_Front\obj\Debug\netcoreapp3.1\Razor\Views\user\Register.cshtml.g.cs
