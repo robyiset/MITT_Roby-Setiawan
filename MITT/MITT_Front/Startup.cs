@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MITT_Front.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace MITT_Front
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            APIConnection.conn = configuration.GetConnectionString("APIConnection");
         }
 
         public IConfiguration Configuration { get; }
@@ -24,6 +26,7 @@ namespace MITT_Front
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

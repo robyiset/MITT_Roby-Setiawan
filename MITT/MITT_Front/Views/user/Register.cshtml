@@ -1,0 +1,80 @@
+﻿@model MITT_Front.Models.UserProfile
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - MITT_Front</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <h4>Register</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Register">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="user_identity.username" class="control-label"></label>
+                            <input asp-for="user_identity.username" class="form-control" />
+                            <span asp-validation-for="user_identity.username" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="user_identity.password" class="control-label"></label>
+                            <input asp-for="user_identity.password" class="form-control" />
+                            <span asp-validation-for="user_identity.password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="name" class="control-label"></label>
+                            <input asp-for="name" class="form-control" />
+                            <span asp-validation-for="name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="address" class="control-label"></label>
+                            <textarea asp-for="address" class="form-control"></textarea>
+                            <span asp-validation-for="address" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="bod" class="control-label"></label>
+                            <input type="date" asp-for="bod" class="form-control" />
+                            <span asp-validation-for="bod" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="email" class="control-label"></label>
+                            <input asp-for="email" class="form-control" />
+                            <span asp-validation-for="email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <a asp-action="Login">Login</a>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - MITT_Front - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

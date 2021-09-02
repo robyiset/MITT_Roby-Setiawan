@@ -14,7 +14,7 @@ namespace MITT_API.Controllers
     public class UserController : ControllerBase
     {
         private DBConnection db = new DBConnection();
-        [Route("api/login/")]
+        [Route("api/login")]
         [HttpGet]
         public ActionResult Login(string username, string password)
         {
